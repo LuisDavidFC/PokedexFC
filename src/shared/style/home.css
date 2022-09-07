@@ -7,8 +7,14 @@
   padding: 20px;
 }
 .home__img {
-  margin: 0 auto 40px;
+  margin: 80px auto 10px;
   max-width: 500px;
+  width: 300%;
+  position: flex;
+  top: 20%;
+  left: 30%;
+  transform: translate(%, -50%);
+  
   
 }
 .home__title {

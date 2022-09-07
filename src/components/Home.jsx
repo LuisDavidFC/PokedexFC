@@ -8,7 +8,6 @@ import Pokeball from './../assets/Pokeball.gif'
 import FooterPoke from '../shared/FooterPoke'
 import home__img from '../shared/style/home.css'
 
-
 const Home = () => {
 
     const dispatch = useDispatch()
@@ -63,7 +62,7 @@ const HomeContainer = styled.div`
         @media (max-width: 768px){
             font-size: 3.3rem;
         }
-    }
+
 `
 
 const FirstSection = styled.section`
