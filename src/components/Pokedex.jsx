@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import PokemonCard from './pokedex/PokemonCard'
-import Pikachu2 from './../assets/Pikachu_2.gif'
 import { useSelector } from 'react-redux'
 import SearchInput from './pokedex/SearchInput'
 import SelectType from './pokedex/SelectType'
@@ -51,7 +50,6 @@ const Pokedex = () => {
 
     return (
         <PokedexContainer>
-            
             <HeaderPoke />
             <h2>Welcome {nameTrainer}, here you can find your favorite pokemon</h2>
             <SearchBar>

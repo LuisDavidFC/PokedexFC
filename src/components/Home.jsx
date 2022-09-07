@@ -3,10 +3,11 @@ import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import { setNameTrainer } from '../store/slice/nameTrainer.slice'
-
 import PikachuGif from './../assets/Pikachu.gif'
 import Pokeball from './../assets/Pokeball.gif'
 import FooterPoke from '../shared/FooterPoke'
+import home__img from '../shared/style/home.css'
+
 
 const Home = () => {
 
@@ -29,7 +30,8 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            <h1><span>Poké</span>dex</h1>
+            
+            <img className='home__img'  src="/images/Home/pokedex.png" alt="" />
             <FirstSection>
                 <h1>Hello Trainer!!!</h1>
                 <img src={PikachuGif} alt="" />
@@ -57,21 +59,7 @@ const HomeContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: #F8F8F8;
-    &>h1{
-        font-size: 4rem;
-        color: #DFE1E1;
-        margin-top: 120px;
-        margin-bottom: 60px;
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-        border: 3px solid black;
-        border-radius: 30px;
-        background-color: #B5331C;
-        text-align: center;
-        &>span{
-            color: #B5331C;
-            background-color: #DFE1E1;
-            border-radius: 27px;
-        }
+    
         @media (max-width: 768px){
             font-size: 3.3rem;
         }
